@@ -209,12 +209,25 @@ footer nav a {
 }
 
 @media(max-width:800px){
-    *{
-        color:orange;
+    .boxes{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    }
+    .middle-content .boxes .box{
+        width:30%;
+        height:20vh;
     }
 }
+
 @media(max-width:500px){
-    *{
-        color:blue;
+    .middle-content .boxes{
+        display:flex;
+        flex-direction:column;
+        align-content:center;
+    }
+   .middle-content .boxes .box{
+        width:30%;
+        height:20vh;
     }
 }
