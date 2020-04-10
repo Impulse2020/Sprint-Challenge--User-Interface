@@ -58,18 +58,23 @@ html, body {
 }
 header{
     display:flex;
-
+    width:100%;
+    align-content:center;
+}
+nav{
+    width:90%;
 }
 ul{
     display:flex;
     justify-content: space-evenly;
+    
 }
 ul li{
     
     margin: 1.5%;
     list-style:none;
     width:15%;
-    padding:10px;
+    padding:16px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -139,6 +144,14 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+.jumboTron{
+    background-image: url('jumbo.jpg');
+    width: 100%;
+    transform:scaleX(1.2);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size:auto;
 }
 
 
