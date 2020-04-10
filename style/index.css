@@ -209,6 +209,14 @@ footer nav a {
 }
 
 @media(max-width:800px){
+    .top-content .text-container{
+        width:85%;
+        margin:1%;
+    }
+    .top-content .jumboTron{
+        width:100%;
+        
+    }
     .boxes{
     display:flex;
     flex-direction: column;
@@ -221,6 +229,14 @@ footer nav a {
 }
 
 @media(max-width:500px){
+    .top-content .text-container{
+        width:85%;
+        margin:1%;
+    }
+    .top-content .jumboTron{
+        width:100%;
+        
+    }
     .middle-content .boxes{
         display:flex;
         flex-direction:column;
