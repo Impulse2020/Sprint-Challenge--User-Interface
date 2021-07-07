@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    max-width:100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,6 +55,26 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+}
+header{
+    display:flex;
+    width:100%;
+    align-content:center;
+}
+nav{
+    width:90%;
+}
+ul{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+ul li{
+    
+    margin: 1.5%;
+    list-style:none;
+    width:15%;
+    padding:16px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -104,7 +125,6 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -125,6 +145,49 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+.jumboTron{
+    background-image: url('jumbo.jpg');
+    width: 100%;
+    transform:scaleX(1.2);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+
+.box:nth-child(1){
+    background-color:teal ;
+}
+.box:nth-child(2){
+    background-color:gold;
+}
+.box:nth-child(3){
+background-color:cadetblue ;
+}
+.box:nth-child(4){
+background-color:coral;
+}
+.box:nth-child(5){
+background-color:crimson;
+}
+.box:nth-child(6){
+background-color:forestgreen;
+}
+.box:nth-child(7){
+background-color:darkorchid;
+}
+.box:nth-child(8){
+background-color:hotpink;
+}
+.box:nth-child(9){
+background-color:indigo;
+}
+.box:nth-child(10){
+background-color:dodgerblue;
+}
+
+
+
 
 footer {
     width: 100%;
@@ -143,4 +206,140 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width:800px){
+    header{
+        flex-direction:column;
+        align-items:center;
+        
+    }
+    h1{
+        width:80%;
+        height:20vh;
+        text-align: center;
+    }
+    h1 img{
+        transform:scale(1.5);
+        margin:5%;
+        padding:2%;
+    }
+    header nav{
+        
+        flex-direction: column;
+        align-content: center;
+        
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    ul li{
+        width:60%;
+        margin:0%;
+        background-color:whitesmoke;
+        text-align: center;
+        font-size:1.5rem;
+        border:1px solid lightgrey;
+        color:lightslategrey;
+        border-radius:5px;
+    }
+    ul li:nth-child(1){
+        color:darkslategray;
+        background-color:darkgrey;
+    }
+    ul li a{
+        color:lightslategray;
+        text-decoration: none;
+    }
+    .top-content{
+        margin:2.5%;
+    }
+    .top-content .text-container{
+        width:85%;
+        margin:1%;
+    }
+    .top-content .jumboTron{
+        width:100%;
+        
+    }
+    .boxes{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    }
+    .middle-content .boxes .box{
+        width:30%;
+        height:20vh;
+    }
+}
+
+@media(max-width:500px){
+    header{
+        flex-direction:column;
+        align-items:center;
+        
+    }
+    h1{
+        width:80%;
+        height:20vh;
+        text-align: center;
+    }
+    h1 img{
+        transform:scale(1.5);
+        margin:5%;
+        padding:2%;
+    }
+    header nav{
+        
+        flex-direction: column;
+        align-content: center;
+        
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    ul li{
+        width:60%;
+        margin:0%;
+        background-color:whitesmoke;
+        text-align: center;
+        font-size:1.5rem;
+        border:1px solid lightgrey;
+        color:lightslategrey;
+        border-radius:5px;
+    }
+    ul li:nth-child(1){
+        color:darkslategray;
+        background-color:darkgrey;
+    }
+    ul li a{
+        color:lightslategray;
+        text-decoration: none;
+    }
+    .top-content{
+        margin:2.5%;
+    }
+    .top-content .text-container{
+        width:85%;
+        margin:1%;
+    }
+    .top-content .jumboTron{
+        width:100%;
+        
+    }
+    .boxes{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    }
+    .middle-content .boxes .box{
+        width:30%;
+        height:20vh;
+    }
 }
